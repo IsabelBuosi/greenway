@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://isabelbuosi.github.io/greenway/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="topo">
+      <img src="https://github.com/IsabelBuosi/greenway/blob/images/logo.jpg" alt="GreenWay Negócios" class="logo"/>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="boas-praticas.html">Boas Práticas</a></li>
+          <li><a href="exemplos.html">Exemplos</a></li>
+          <li><a href="relatorios.html">Relatórios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo" style="max-width: 800px; margin: 50px auto;">
+    <h2 style="text-align:center; margin-bottom: 30px;">Relatório de Sustentabilidade</h2>
+    <canvas id="graficoEmpresas" width="400" height="200"></canvas>
+  </main>
+
+  <script>
+    const ctx = document.getElementById('graficoEmpresas');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Natura', 'Ambev', 'IKEA', 'Boticário'],
+        datasets: [{
+          label: 'Investimentos Sustentáveis (em milhões)',
+          data: [12, 19, 8, 14],
+          backgroundColor: ['#2b6827', '#4ba74b', '#6fcf97', '#27ae60']
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
