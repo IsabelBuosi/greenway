@@ -126,19 +126,10 @@ body {
   color: #2b6827;
 }
 
-/* Ícones fictícios para decoração */
 .icone {
   width: 50px;
   height: 50px;
   margin: 0 auto 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: block;
 }
 
-.icone.planta {
-  background-image: url('../images/icon-planta.png'); /* substitua com seu caminho */
-}
-
-.icone.relatorio {
-  background-image: url('../images/icon-relatorio.png'); /* substitua com seu caminho */
-}
