@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Relatórios</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://isabelbuosi.github.io/greenway/style.css" rel="stylesheet"/>
+  <link href="https://isabelbuosi.github.io/greenway/style-rel.css" rel="stylesheet"/>
 </head>
 <body>
   <header>
@@ -21,32 +21,33 @@
     </div>
   </header>
 
-  <main class="conteudo" style="max-width: 800px; margin: 50px auto;">
-    <h2 style="text-align:center; margin-bottom: 30px;">Relatório de Sustentabilidade</h2>
-    <canvas id="graficoEmpresas" width="400" height="200"></canvas>
-  </main>
+  <main class="conteudo-relatorios">
+    <h2>Relatórios</h2>
+    <p class="descricao">Cadastre as Boas Práticas Sustentáveis do seu negócio para gerar relatórios atualizados e obter um resultado aproximado de comparação entre os outros negócios que estão cadastrados na nossa plataforma!</p>
 
-  <script>
-    const ctx = document.getElementById('graficoEmpresas');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Natura', 'Ambev', 'IKEA', 'Boticário'],
-        datasets: [{
-          label: 'Investimentos Sustentáveis (em milhões)',
-          data: [12, 19, 8, 14],
-          backgroundColor: ['#2b6827', '#4ba74b', '#6fcf97', '#27ae60']
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-  </script>
+    <div class="cards-relatorio">
+      <div class="card">
+        <div class="icone planta"></div>
+        <h3>Boas Práticas Aplicadas</h3>
+        <p>Cadastre as medidas de boas práticas que sua empresa adotou para acompanhar o progresso sustentável do seu negócio.</p>
+        <button>Adicionar</button>
+      </div>
+
+      <div class="card destaque">
+        <div class="icone relatorio"></div>
+        <h3>Relatórios de Sustentabilidade</h3>
+        <p>Gere um relatório atualizado com as ações aplicadas por sua empresa apresentando a data de implementação e um resultado aproximado de seu progresso sustentável.</p>
+        <button>Gerar Relatório</button>
+      </div>
+
+      <div class="card">
+        <h3>Sua empresa colaborou mais com o Meio Ambiente que</h3>
+        <div class="grafico">
+          <div class="porcentagem">25%</div>
+        </div>
+        <p>das outras!</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
