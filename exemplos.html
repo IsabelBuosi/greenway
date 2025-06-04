@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exemplos Sustentáveis em Empresas</title>
-  <link href="https://isabelbuosi.github.io/greenway/exemplos.css" rel="stylesheet"/>
-</head>
 <body>
   <header>
     <div class="topo">
@@ -23,35 +15,82 @@
 
   <main>
     <section class="exemplos-grid">
-        <h1>Exemplos Reais de Sustentabilidade</h1>
-        <p class="intro">Veja como empresas estão implementando ações sustentáveis no Brasil e no mundo.</p>
-      
-        <div class="grid">
-          <div class="card">
-            <img src="images/natura.jpg" alt="Natura">
-            <h2>Natura</h2>
-            <p>Carbono neutro desde 2007, uso de ingredientes naturais e logística reversa.</p>
-          </div>
-      
-          <div class="card">
-            <img src="images/ambev.jpg" alt="Ambev">
-            <h2>Ambev</h2>
-            <p>Usinas solares, reuso de água e embalagens retornáveis em escala nacional.</p>
-          </div>
-      
-          <div class="card">
-            <img src="images/ikea.jpeg" alt="IKEA">
-            <h2>IKEA</h2>
-            <p>Algodão 100% sustentável e foco em economia circular com devolução de móveis.</p>
-          </div>
-      
-          <div class="card">
-            <img src="images/boticario.jpg" alt="Grupo Boticário">
-            <h2>Grupo Boticário</h2>
-            <p>Reciclagem de embalagens, campanhas ambientais e apoio a ONGs.</p>
-          </div>
+      <h1>Exemplos Reais de Sustentabilidade</h1>
+      <p class="intro">Veja como empresas estão implementando ações sustentáveis no Brasil e no mundo.</p>
+
+      <div class="grid">
+        <div class="card">
+          <img src="images/natura.jpg" alt="Natura" onclick="document.getElementById('modal1').style.display='block'">
+          <h2>Natura</h2>
+          <p>Carbono neutro desde 2007, uso de ingredientes naturais e logística reversa.</p>
         </div>
-      </section>      
+
+        <div class="card">
+          <img src="images/ambev.jpg" alt="Ambev" onclick="document.getElementById('modal2').style.display='block'">
+          <h2>Ambev</h2>
+          <p>Usinas solares, reuso de água e embalagens retornáveis em escala nacional.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/ikea.jpeg" alt="IKEA" onclick="document.getElementById('modal3').style.display='block'">
+          <h2>IKEA</h2>
+          <p>Algodão 100% sustentável e foco em economia circular com devolução de móveis.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/boticario.jpg" alt="Grupo Boticário" onclick="document.getElementById('modal4').style.display='block'">
+          <h2>Grupo Boticário</h2>
+          <p>Reciclagem de embalagens, campanhas ambientais e apoio a ONGs.</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Modais com conteúdo -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+      <img src="images/natura.jpg" alt="Natura" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla velit at velit fermentum, at volutpat ligula fermentum.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+      <img src="images/ambev.jpg" alt="Ambev" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra libero at felis ultrices, a tempor justo sagittis.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+      <img src="images/ikea.jpeg" alt="IKEA" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae mi quis risus ullamcorper dapibus a in nulla.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal4')">&times;</span>
+      <img src="images/boticario.jpg" alt="Grupo Boticário" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet odio in justo posuere, nec facilisis nisi ultrices.</p>
+    </div>
+  </div>
+
+  <script>
+    function fecharModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      for (let i = 1; i <= 4; i++) {
+        const modal = document.getElementById('modal' + i);
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      }
+    };
+  </script>
 </body>
-</html>
