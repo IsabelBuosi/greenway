@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exemplos Sustentáveis em Empresas</title>
-  <link href="https://isabelbuosi.github.io/greenway/exemplos.css" rel="stylesheet"/>
-</head>
 <body>
   <header>
     <div class="topo">
@@ -23,35 +15,110 @@
 
   <main>
     <section class="exemplos-grid">
-        <h1>Exemplos Reais de Sustentabilidade</h1>
-        <p class="intro">Veja como empresas estão implementando ações sustentáveis no Brasil e no mundo.</p>
-      
-        <div class="grid">
-          <div class="card">
-            <img src="images/natura.jpg" alt="Natura">
-            <h2>Natura</h2>
-            <p>Carbono neutro desde 2007, uso de ingredientes naturais e logística reversa.</p>
-          </div>
-      
-          <div class="card">
-            <img src="images/ambev.jpg" alt="Ambev">
-            <h2>Ambev</h2>
-            <p>Usinas solares, reuso de água e embalagens retornáveis em escala nacional.</p>
-          </div>
-      
-          <div class="card">
-            <img src="images/ikea.jpeg" alt="IKEA">
-            <h2>IKEA</h2>
-            <p>Algodão 100% sustentável e foco em economia circular com devolução de móveis.</p>
-          </div>
-      
-          <div class="card">
-            <img src="images/boticario.jpg" alt="Grupo Boticário">
-            <h2>Grupo Boticário</h2>
-            <p>Reciclagem de embalagens, campanhas ambientais e apoio a ONGs.</p>
-          </div>
+      <h1>Exemplos Reais de Sustentabilidade</h1>
+      <p class="intro">Veja como empresas estão implementando ações sustentáveis no Brasil e no mundo.</p>
+
+      <div class="grid">
+        <div class="card">
+          <img src="images/natura.jpg" alt="Natura" onclick="document.getElementById('modal1').style.display='block'">
+          <h2>Natura</h2>
+          <p>Carbono neutro desde 2007, uso de ingredientes naturais e logística reversa.</p>
         </div>
-      </section>      
+
+        <div class="card">
+          <img src="images/ambev.jpg" alt="Ambev" onclick="document.getElementById('modal2').style.display='block'">
+          <h2>Ambev</h2>
+          <p>Usinas solares, reuso de água e embalagens retornáveis em escala nacional.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/ikea.jpeg" alt="IKEA" onclick="document.getElementById('modal3').style.display='block'">
+          <h2>IKEA</h2>
+          <p>Algodão 100% sustentável e foco em economia circular com devolução de móveis.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/boticario.jpg" alt="Grupo Boticário" onclick="document.getElementById('modal4').style.display='block'">
+          <h2>Grupo Boticário</h2>
+          <p>Reciclagem de embalagens, campanhas ambientais e apoio a ONGs.</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Modais com conteúdo -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+      <img src="images/natura.jpg" alt="Natura" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <h3>🌱 Natura mantém liderança em sustentabilidade com ações neutras em carbono desde 2007</h3>
+      <h4>Publicado em: 12 de maio de 2025</h4>
+      <p>  </p>
+      <p>A Natura reafirma seu compromisso com a sustentabilidade ao completar mais de 15 anos como empresa carbono neutro. Desde 2007, a gigante brasileira de cosméticos investe em programas de compensação de emissões, reflorestamento e energias renováveis.</p>
+      <p>  </p>
+      <p>Além disso, a marca aposta fortemente no uso de ingredientes naturais da biodiversidade brasileira, com foco na Amazônia, garantindo a rastreabilidade e a origem ética de suas matérias-primas. Outro destaque é a logística reversa: a Natura coleta embalagens usadas em pontos de venda e oferece incentivo aos consumidores que participam da iniciativa.</p>
+      <p>  </p>
+      <p>Com essas ações, a Natura mostra que é possível unir beleza, inovação e responsabilidade ambiental em um único frasco.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+      <img src="images/ambev.jpg" alt="Ambev" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <h3>☀️ Ambev investe em energia limpa e reduz impacto ambiental com ações em todo o país</h3>
+      <h4>Publicado em: 3 de abril de 2025</h4>
+      <p>  </p>
+      <p>A Ambev segue avançando em sua missão de “um mundo melhor” com investimentos robustos em sustentabilidade. Atualmente, a empresa opera dezenas de usinas solares em várias regiões do Brasil, abastecendo seus centros de distribuição com energia limpa e renovável.</p>
+      <p>  </p>
+      <p>Outro marco relevante é o reuso de água em seus processos fabris. A Ambev já consegue reutilizar até 40% da água utilizada na produção de bebidas, sem comprometer a qualidade.</p>
+      <p>  </p>
+      <p>As embalagens retornáveis também se destacam: cerca de 60% das garrafas vendidas no país já seguem esse modelo, promovendo a economia circular e reduzindo a geração de resíduos sólidos.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+      <img src="images/ikea.jpeg" alt="IKEA" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <h3>♻️ IKEA amplia programa de economia circular e incentiva devolução de móveis usados</h3>
+      <h4>Publicado em: 17 de março de 2025</h4>
+      <p>  </p>
+      <p>A gigante sueca do mobiliário, IKEA, está cada vez mais comprometida com a sustentabilidade. Uma das metas da empresa é utilizar apenas algodão de origem 100% sustentável em todos os seus produtos têxteis — e essa meta já foi atingida.</p>
+      <p>  </p>
+      <p>Outro destaque é o programa “Segunda Vida”, que permite aos consumidores devolver móveis usados em bom estado para receber descontos em novas compras. Os itens devolvidos são restaurados e colocados novamente à venda, promovendo a economia circular e reduzindo o desperdício.</p>
+      <p>  </p>
+      <p>Essas ações fazem parte do plano global da IKEA de se tornar uma empresa com impacto climático positivo até 2030.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal4')">&times;</span>
+      <img src="images/boticario.jpg" alt="Grupo Boticário" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+      <h3>🌎 Grupo Boticário reforça compromisso ambiental com projetos sociais e reciclagem de embalagens</h3>
+      <h4>Publicado em: 8 de fevereiro de 2025</h4>
+      <p>  </p>
+      <p>O Grupo Boticário vem se consolidando como uma das empresas brasileiras mais engajadas em práticas socioambientais. Com o programa “Boti Recicla”, a empresa incentiva o descarte consciente de embalagens por meio de pontos de coleta em lojas de todo o país.</p>
+      <p>  </p>
+      <p>Paralelamente, a marca promove campanhas educativas nas redes sociais, abordando temas como consumo consciente, biodiversidade e preservação de recursos naturais.</p>
+      <p>  </p>
+      <p>Outro pilar importante é o apoio contínuo a ONGs e projetos ambientais locais. Só em 2024, mais de R$ 10 milhões foram destinados a iniciativas que atuam na recuperação de florestas, educação ambiental e inclusão social de catadores de recicláveis.</p>
+    </div>
+  </div>
+
+  <script>
+    function fecharModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      for (let i = 1; i <= 4; i++) {
+        const modal = document.getElementById('modal' + i);
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      }
+    };
+  </script>
 </body>
-</html>
