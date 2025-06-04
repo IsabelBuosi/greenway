@@ -1,0 +1,144 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f5f3;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.menu li a:hover {
+  color: #2b6827;
+}
+
+.conteudo-relatorios {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.conteudo-relatorios h2 {
+  font-size: 32px;
+  color: #2b6827;
+}
+
+.descricao {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-relatorio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #5b7f6e;
+  color: white;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.card.destaque {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.card p {
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.card button {
+  background-color: #2b6827;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #245a22;
+}
+
+.grafico {
+  background-color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.porcentagem {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b6827;
+}
+
+/* Ícones fictícios para decoração */
+.icone {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icone.planta {
+  background-image: url('../images/icon-planta.png'); /* substitua com seu caminho */
+}
+
+.icone.relatorio {
+  background-image: url('../images/icon-relatorio.png'); /* substitua com seu caminho */
+}
